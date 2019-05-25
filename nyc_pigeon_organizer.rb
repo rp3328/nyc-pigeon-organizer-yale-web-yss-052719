@@ -10,7 +10,7 @@ def nyc_pigeon_organizer(data)
             hash[name][key] << info.to_s
           else
             hash[name][key] = [info.to_s]
-
+          end
         else
           hash[name] = {key => [info.to_s]}
         end
