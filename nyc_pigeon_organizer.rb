@@ -6,9 +6,12 @@ def nyc_pigeon_organizer(data)
     val.each do |info, arr|
       arr.each do |name|
         if hash.include?(name)
-
+          if hash[name].include?(key)
+            
+            
         else
           hash[name] = {key => [info.to_s]}
+        end
       end
     end
   end
