@@ -9,6 +9,7 @@ def nyc_pigeon_organizer(data)
           if hash[name].include?(key)
             hash[name][key] << info.to_s
           else
+            hash[name][key] = [info.to_s]
 
         else
           hash[name] = {key => [info.to_s]}
